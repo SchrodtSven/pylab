@@ -1,0 +1,1 @@
+`!s` which calls `str()` on the value, `!r` which calls `repr()` and `!a` which calls `ascii()` 

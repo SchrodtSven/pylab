@@ -1,0 +1,1 @@
+# mypkg is a placeholder name for future packages
