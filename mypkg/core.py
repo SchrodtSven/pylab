@@ -9,6 +9,7 @@ from typing import Dict
 class Updatable(object):
     '''
     Updateable base class - to be used esp. with dataclass instances by inheritance
+    - only setting existing dataclass attributes
     '''
     def update(self, new: Dict):
         for key, value in new.items():

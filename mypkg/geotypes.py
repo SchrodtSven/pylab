@@ -6,7 +6,7 @@
 # SINCE 2026-01-23
 
 
-type Point = tuple[float, float]  # type alias
+type Point = tuple[float, float]  # type alias for a 2d point (x, y)
 
 
 class Rect:
@@ -40,6 +40,11 @@ class Rect:
         self.calc()
 
     def calc(self):
+        '''
+        Calculationg width, height and area of rectangle basing on let bottom and right top egdes' coordinates
+        
+        :param self: Beschreibung
+        '''
         self.w = self.rt[0] - self.lb[0]
         self.h = self.rt[1] - self.lb[1]
         self.a = self.h * self.w
@@ -130,6 +135,10 @@ class Rect:
         :rtype: bool
         """
         return self.a >= other.a
+
+
+
+    # Property decorators assurring, that depending attribute will be re-claculated 
 
     @property
     def lb(self):
