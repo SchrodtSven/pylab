@@ -7,7 +7,7 @@
 
 
 type Point = tuple[float, float]  # type alias for a 2d point (x, y)
-
+type Point3D = tuple[float, float, float]  # type alias for a 3d point (x, y, z)
 
 class Rect:
     """

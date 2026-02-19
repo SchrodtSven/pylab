@@ -1,4 +1,6 @@
-# Testing data classes - e.g: identity management classes
+# Testing data classes - e.g: identity management classes using:
+# - dataclasses
+# - 
 #
 # AUTHOR Sven Schrodt
 # SINCE 2026-01-21    
@@ -27,5 +29,5 @@ if __name__ == "__main__":
     print(666)
     print(my_usr)
     
-    my_usr.update({'role': 'God', 'sanitized': True, 'passw1': '10PS33cr31', 'groups': ['Linux', 'MacOS', 'Amiga OS']})
+    my_usr.update({'role': 'God', 'sanitized': True, 'passw1': '10PS33cr31', 'groups': ['Linux', 'MacOS', 'Amiga OS', 'TOS', 'Solaris']})
     print(my_usr)

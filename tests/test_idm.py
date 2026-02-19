@@ -16,6 +16,8 @@ class TestIdm(unittest.TestCase):
         self.assertEqual(sven.id, id)
         self.assertEqual(sven.user, user)
         self.assertEqual(sven.passw, passw)
+        sven.update({'groups':'GOD'})
+        print(sven)
 
 
 if __name__ == '__main__':
